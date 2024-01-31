@@ -1,4 +1,10 @@
-# Harmonia
+# Chez Soi
+
+This project is meant to be use for chekpoint 4. I use [harmonia](https://www.npmjs.com/package/create-harmonia), actually in development. This is the opportunity of me to test a lot a things including this framework.
+
+Chez Soi is a 2 days solo project about sell/rent properties on a website with several features like authentification, database, API. I'm using a lot of languages/tools like JavaScript/React/Tailwind and packages to be more efficient.
+
+## Harmonia
 
 Harmonia is a framework meant to serve as a foundation for every project following the React-Express-MySQL stack, as learned in Wild Code School.
 It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying a pedagogical tool.
