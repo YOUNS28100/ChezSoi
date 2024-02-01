@@ -6,7 +6,14 @@ export default {
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['"Jost", sans-serif'],
+    },
+    extend: {
+      fontFamily: {
+        Jost: ["Jost", "sans-serif"],
+      },
+    },
   },
   plugins: ["flowbite/plugin"],
 };
