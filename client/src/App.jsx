@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
 import { useState } from "react";
-import Navbar from "./components/NavigationBar";
+import Navbar from "./components/NavBar";
 import "./App.css";
 
 function App() {
-  const [auth, setAuth] = useState("hello i'm auth");
+  const [auth, setAuth] = useState("");
+  const [search, setSearch] = useState("");
+
   return (
     <div>
-      <Navbar context={{ auth, setAuth }} />
-      <Outlet context={{ auth, setAuth }} />
+      <Navbar auth={auth} setAuth={setAuth} />
+      <Outlet context={{ auth, setAuth, search, setSearch }} />
     </div>
   );
 }

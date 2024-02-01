@@ -9,7 +9,16 @@ import HomePage from "./pages/HomePage";
 const router = createBrowserRouter([
   {
     element: <App />,
-    children: [{ path: "/accueil", element: <HomePage /> }],
+    children: [
+      {
+        path: "/accueil",
+        element: <HomePage />,
+      },
+      {
+        path: "*",
+        element: <h1>Not Found</h1>,
+      },
+    ],
   },
 ]);
 
