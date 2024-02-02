@@ -3,14 +3,17 @@ const express = require("express");
 const router = express.Router();
 
 /* ************************************************************************* */
-// Import And Use Routers Here
+// Define Your API Routes Here
 /* ************************************************************************* */
 
-const itemsRouter = require("./items/router");
-const searchRouter = require("./search/router");
+// Import actions
+const { browse, read, add } = require("../../controllers/searchActions");
 
-router.use("/items", itemsRouter);
-router.use("/search", searchRouter);
+router.get("/", browse);
+
+router.get("/:id", read);
+
+router.post("/", add);
 
 /* ************************************************************************* */
 

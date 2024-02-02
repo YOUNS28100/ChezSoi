@@ -90,7 +90,7 @@ const seed = async () => {
         ),
         database.query(
           `UPDATE offer SET coordinates = POINT(?, ?)`,
-          [48.873787, 2.295047]
+          [22.22185, -159.421516]
         )
       );
     }
